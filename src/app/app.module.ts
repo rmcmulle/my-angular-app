@@ -4,14 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component'; // so typescript can find
+import { ServersComponent } from './servers/servers.component';
+import { WarningComponent } from './warning/warning.component';
+import { SuccessComponent } from './success/success.component';
+import { UsernameComponent } from './username/username.component'; // so typescript can find
 
 @NgModule({
   // so angular knowns about the new component
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    WarningComponent,
+    SuccessComponent,
+    UsernameComponent
   ],
   imports: [
     BrowserModule,
