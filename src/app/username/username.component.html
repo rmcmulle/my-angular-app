@@ -1,0 +1,6 @@
+<h4>Username Login</h4>
+<input [(ngModel)]="username">
+<button class="btn btn-primary" [disabled]="!username" (click)="userLogin()">Login</button>
+<button class="btn btn-primary" [disabled]="!currUser" (click)="userLogout()">Logout</button>
+<button class="btn btn-primary" [disabled]="!username" (click)="clearUsername()">Clear Username</button>
+<p>Current user is: {{ currUser }}</p>
