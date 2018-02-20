@@ -5,5 +5,5 @@
 
 <!-- <p [innerText]="allowNewServer"></p> -->
 <p *ngIf="serverCreated">Server created - Server name is {{ serverName }}</p>
-<app-server></app-server>
-<app-server></app-server>
+
+<app-server *ngFor="let server of servers"></app-server>
